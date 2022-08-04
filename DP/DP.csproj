@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inquiry.cs" />
     <Compile Include="Parent.cs" />
+    <Compile Include="Questionnaire.cs" />
     <Compile Include="Seeker.cs" />
-    <Compile Include="Origin.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sibiling.cs" />

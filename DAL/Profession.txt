@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL
+{
+    class Profession
+    {תכנות
+אדריכלות
+אחיות
+הוראה
+גננות
+פסיכולוגיה
+ביו טכנולוגיה
+ראית חשבון
+גרפיקה
+עבודה סוציאלית
+מנהל עסקים
+צילום
+מזכירות
+ריפוי בעיסוק/אמנות/קלינאות תקשורת
+הנהלת חשבונות
+פאנות/סירוק/איפור
+עיצוב אירועים
+אחר
+
+    }
+}

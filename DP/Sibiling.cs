@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DP
 {
-    public class Sibiling
+    public class Sibiling : Person
     {
+        public enum Gender { Male, Female }
+        public int Age { get; set; }//needs to be current
+        public bool Married { get; set; }
+        public string marriedTo { get; set; }
+        public enum Statuse { Works, Studies, WorksAndStudies, Other }
+
     }
 }

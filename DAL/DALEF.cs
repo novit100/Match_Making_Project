@@ -36,12 +36,13 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public void AddParent( string firstName, string lastName,string middleName, Gender gender, Origin origin, int seekerId)
+        public int AddParent( string firstName, string lastName,string middleName, Gender gender, Origin origin, int seekerId)
         {
             Parent parent = new Parent() { FirstName = firstName, MiddleName = middleName, LastName = lastName, SeekerId = seekerId, Gender = gender, Origin = origin };
             ShidCtx.Parents.Add(parent);
             ShidCtx.SaveChanges();
-            
+            Console.WriteLine(parent.Id);
+            return parent.Id;            
         }
 
         public void DeleteParent(int parentId)

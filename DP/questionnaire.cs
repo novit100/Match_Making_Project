@@ -8,6 +8,7 @@ namespace DP
 {
     public class Questionnaire
     {
+        public int SeekerId { get; set; }
         public string FinancialHelp { get; set; }
         public bool transferPhoto { get; set; }
         public string Email { get; set; }
@@ -15,22 +16,8 @@ namespace DP
 
         public bool AreParentsDivorced { get; set; }
         public string HealthCondition { get; set; }
-        public List<string> Interests = new List<string>()
-                    {
-                        "reading",
-                        "writing",
-                        "music",
-                        "cooking / baking",
-                        "sport",
-                        "Drawing",
-                        "Academic reading",
-                        "Extreme activity",
-                        "trips / nature",
-                        "language teaching",
-                        "Crosswords / sudoku / riddles",
-                        "Board games(chess, etc.)",
-                        "Volunteering / charity activity]"
-                    };
+        public List<Interest> Interests { get; set; }
+        public bool DoesWork { get; set; }//not sure if to add the profession here or in the questionnair
 
 
 

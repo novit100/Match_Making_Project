@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DP
 {
-     public class Inquiry : Person
+     public class Acquaintance : Person
     {
-        public enum status { friend, rabbai, family, familyAcquaintances, inLaws, other }
+        public int SeekerId { get; set; }
+        public AcquaintanceType AcquaintanceType { get; set; }
         public string PhoneNumber { get; set; }
     }
 }

@@ -15,5 +15,33 @@ namespace DP
 
         public bool AreParentsDivorced { get; set; }
         public string HealthCondition { get; set; }
+        public List<string> Interests = new List<string>()
+                    {
+                        "reading",
+                        "writing",
+                        "music",
+                        "cooking / baking",
+                        "sport",
+                        "Drawing",
+                        "Academic reading",
+                        "Extreme activity",
+                        "trips / nature",
+                        "language teaching",
+                        "Crosswords / sudoku / riddles",
+                        "Board games(chess, etc.)",
+                        "Volunteering / charity activity]"
+                    };
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

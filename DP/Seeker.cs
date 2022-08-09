@@ -13,7 +13,7 @@ namespace DP
         public string Picture { get; set; }
         public enum BodyStructure { Thin, Average, Thick }
         public DateTime DOB { get; set; }
-        public string ElementarSchool { get; set; }
+        public string ElementrySchool { get; set; }
         public bool DoesWork { get; set; }//not sure if to add the profession here or in the questionnair
         public Questionnaire Questionnaire { get; set; }//can i nme them the same
         //pointers to the family members

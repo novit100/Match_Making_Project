@@ -1,0 +1,17 @@
+﻿<Window x:Class="Match_Making_Project.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Match_Making_Project"
+        mc:Ignorable="d"
+        Title="SignUp" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Margin="8" Orientation="Horizontal">
+            <Button MinWidth="93">OK</Button>
+            <Button MinWidth="93" Margin="10,0,0,0">Cancel</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

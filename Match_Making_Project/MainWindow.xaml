@@ -23,6 +23,8 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
        
         <!--  Header  -->
@@ -31,14 +33,14 @@
             FontSize="32"
             Text="Create Product" />
 
-        <!--  Id  -->
+        <!-- Seeker Id  -->
         <Grid Grid.Row="1" Margin="0 25 0 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
                 <ColumnDefinition Width="*" MaxWidth="100" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Column="0" Text="Id" />
+            <TextBlock Grid.Column="0" Text="Seeker Id " />
             <TextBox
                 Grid.Column="1"
                 Margin="20 0 0 0"
@@ -58,29 +60,55 @@
                 Margin="20 0 0 0"
                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
         </Grid>
-
-        <!--  Description  -->
-        <Grid Grid.Row="4" Margin="0 15 0 0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Grid.Column="0" Text="Description" />
-            <TextBox
-                Grid.Column="1"
-                Margin="20 0 0 0"
-                Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" />
-        </Grid>
-
-        <!--  Price  -->
+        <!--  Middle Name  -->
         <Grid Grid.Row="3" Margin="0 15 0 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Column="0" Text="Price" />
+            <TextBlock Grid.Column="0" Text="Middle Name" />
+            <TextBox
+                Grid.Column="1"
+                Margin="20 0 0 0"
+                Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+        <!-- Last Name  -->
+        <Grid Grid.Row="4" Margin="0 15 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="Last Name" />
+            <TextBox
+                Grid.Column="1"
+                Margin="20 0 0 0"
+                Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <!--  Gender  -->
+        <Grid Grid.Row="5" Margin="0 15 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="Gender" />
+            <TextBox
+                Grid.Column="1"
+                Margin="20 0 0 0"
+                Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <!--  Origin  -->
+        <Grid Grid.Row="6" Margin="0,15.2,-0.4,0.4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" SharedSizeGroup="Label" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="Origin" />
             <TextBox
                 Grid.Column="1"
                 Margin="20 0 0 0"
@@ -89,13 +117,14 @@
 
         <!--  Create Button  -->
         <Button
-            Grid.Row="5"
+            x:Name="CreateButton"
+            Grid.Row="7"
             Margin="0 25 0 0"
             Padding="10 5"
             HorizontalAlignment="Left"
             Command="{Binding CreateProductCommand}"
             Content="Create"
-            IsEnabled="{Binding CanCreate}">
+            IsEnabled="{Binding CanCreate}" Click="CreateParent">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#32a852" />

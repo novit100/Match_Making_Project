@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,16 @@ namespace Match_Making_Project
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {   IBL bl=BLIMP.
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void CreateParent(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

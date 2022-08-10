@@ -25,16 +25,18 @@ namespace DAL
 
         #region Parent
         IEnumerable<Parent> GetParentsOfSeeker(int seekerId);
+        Parent GetParent(int parentId);
         int AddParent(string firstName, string lastName, string middleName, Gender gender, Origin origin, int seekerId);
         void DeleteParent(int parentId);
+        
         #endregion
 
-       /* #region Person
-        IEnumerable<Person> GetAllPersons();
-        int AddPerson(int PersonId, Gender gender, Origin origin);
-        void DeletePerson(int PersonId);
-        #endregion
-*/
+        /* #region Person
+         IEnumerable<Person> GetAllPersons();
+         int AddPerson(int PersonId, Gender gender, Origin origin);
+         void DeletePerson(int PersonId);
+         #endregion
+ */
 
         #region Questionnaire
         #endregion

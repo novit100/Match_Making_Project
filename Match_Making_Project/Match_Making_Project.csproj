@@ -120,6 +120,10 @@
     <Resource Include="Ring.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{33A49B1E-6A92-43D1-97E3-FD8FEB42EC40}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DP\DP.csproj">
       <Project>{EB1614D7-82A6-4797-9181-5FEEDD7B4559}</Project>
       <Name>DP</Name>

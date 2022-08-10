@@ -9,7 +9,7 @@ namespace DAL
 {/// <summary>
 /// DAL implementation using Entity Framework
 /// </summary>
-    class DALEF : IDAL
+    sealed class DALEF : IDAL
     {  
         #region Singelton 
         //We need a singelton so that only one IDAL implementation of DALEF will be created 
@@ -29,11 +29,18 @@ namespace DAL
             throw new NotImplementedException();
         }
         #endregion
-        
+
         #region Parent
         public IEnumerable<Parent> GetParentsOfSeeker(int seekerId)
-        {   
+        {
             throw new NotImplementedException();
+        }
+        public Parent GetParent(int parentId)
+        {
+            Parent parent = ShidCtx.Parents
+                    .Where(b => b.Id == parentId)
+                    .FirstOrDefault();
+            return parent;
         }
 
         public int AddParent( string firstName, string lastName,string middleName, Gender gender, Origin origin, int seekerId)
